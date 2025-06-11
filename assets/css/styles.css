@@ -1,0 +1,408 @@
+/* 
+    ISTE-240
+    Midterm - Individual Project Part 1 (Irondequoit)
+    Styles
+    
+    Author: Nathan Pedersen
+*/
+
+/* 
+    Color Palette:
+    #FCB815* (Selective Yellow), #fcb7154c (Opacity Increased)
+    #0F0F19* (Rich Black)
+    #344966 (Indigo Dye)
+    #0B80D3 (Steel Blue)
+    #D5DFF0 (Lavender (web))
+    #F7F0F5 (Magnolia White)
+    *Color is from the Irondequoit Town Seal
+ */
+
+/*////////// SECTION STYLINGS //////////*/
+
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #0F0F19;
+
+    background-color: #F7F0F5;
+    margin: 0; /* Reset body margin */
+}
+
+/* mobile styles for the body */
+@media (max-width: 480px) {
+    body {
+        font-size: 17.5px;
+    }
+}
+
+/* HEADER */
+
+header {
+    background-color: #344966;
+
+    width: 250px;
+    height: 100vh; /* full viewport height */
+    position: fixed; /* MUST be fixed */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a:hover {
+    background-color: #fcb7154c;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.vertical-header nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* nav icon to toggle links in mobile view */
+#menu-button {
+    display: none;
+    cursor: pointer;
+
+    background-color: #D5DFF0;
+
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* mobile styles for the header */
+@media (max-width: 770px) {
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 5px;
+        position: static;
+    }
+
+    #town-card {
+        order: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #menu-button {
+        order: 2;
+        margin-left: 70px;
+        display: block;
+    }
+
+    nav {
+        order: 3;
+        display: none; /* hidden by default */
+        position: absolute;
+        top: 85px; 
+        left: 0;
+        width: 100%;
+        background-color: #344966; 
+        z-index: 10; 
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .vertical-header nav ul li a {
+        padding: 20px 25px; /* extra padding for nav links for finger touches */
+        display: block;
+    }
+    
+    #page-topics {
+        display: none; /* simplify mobile nav */
+    }
+}
+
+#page-topics {
+    margin-left: 15px;
+}
+
+#current-page {
+    background-color: #fcb7154c;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* MAIN */
+
+main, footer {
+    margin-left: 270px;
+    max-width: 750px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    clear: both; /* clears floats */
+}
+
+.page_embed embed {
+    border-radius: 15px;
+}
+
+#references-download {
+    display: none;
+}
+
+/* Styling for Home page Location cards */
+.location-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 3 columns max */
+    gap: 20px;
+}
+
+.card {
+    background-color: #D5DFF0;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-img {
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 16px 0 8px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 16px 16px;
+}
+
+/* stack cards vertically when the screen gets smaller */
+@media (max-width: 480px) {
+    .overview-cards {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 2 columns */
+    }
+}
+@media (max-width: 240px) {
+    .overview-cards {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}
+
+/* mobile styles for the main */
+@media (max-width: 770px) {
+    main, footer {
+        margin-left: 0;
+    }
+
+    #references-download {
+        display: block;
+    }
+}
+
+/* FOOTER */
+
+footer p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    clear: both; /* clears floats */
+    margin-bottom: 16px;
+}
+
+#footer-hr {
+    margin: 2rem;
+}
+
+/*////////// TEXT STYLINGS //////////*/
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #F7F0F5;
+}
+
+.subh1 {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600; /* Semi-bold */
+    color: #344966; /* Indigo Dye */
+    font-size: 2rem;
+    text-transform: uppercase; /* Optional: Make it uppercase */
+    letter-spacing: 0.05em; /* Optional: Add letter spacing */
+    margin-bottom: 0.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.required {
+    color: #CD1111;
+}
+
+.list-spacing li {
+    margin-bottom: .5em;
+}
+
+/* links */
+a:link {
+    color: #0B80D3;
+    text-decoration: none;
+}
+a:visited {
+    color: #0B80D3;
+}
+a:hover {
+    color: #FCB815;
+    text-decoration: underline;
+}
+
+/*////////// BUTTON STYLINGS //////////*/
+
+#homePageButton {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-size: 1.25em;
+	color: #F7F0F5;
+	background-color: #344966;
+	border: medium solid #0F0F19;
+	border-radius: 0.35em;
+	cursor: pointer;
+	padding: 1em 3em;
+	margin-bottom: 2em;
+	transition: all .6s;
+}
+#homePageButton:hover {
+	font-size: 1.5em;
+	background-color: #706a4e;
+	padding: 1.1em 3.3em;
+}
+
+/*////////// IMAGE STYLINGS //////////*/
+
+.float-left {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.float-clear {
+    clear: both;
+}
+
+.display-center {
+    display: block;
+    margin: auto;
+}
+
+#town-card {
+    margin-bottom: 1rem;
+}
+
+#town-seal {
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+img.hero {
+    object-fit: cover;
+    width: auto;
+    height: auto;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-container {
+    position: relative;
+    width: auto;
+    max-height: 375px;
+    overflow: hidden;
+}
+
+main img:not(.hero) {
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+img.full, img.hero {
+    max-width: 100%;
+}
+
+#gmap { 
+    width: 100%; 
+}
+
+/* mobile styles for the imgs */
+@media (max-width: 1020px) {
+    img.large {
+        float: none;
+        display: block;
+        max-width: 100%;
+    }
+}
+@media (max-width: 870px) and (min-width: 770px) {
+    img.medium {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}
+@media (max-width: 620px) {
+    img.medium {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}
+@media (max-width: 520px) {
+    img.float-left, img.float-right {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}

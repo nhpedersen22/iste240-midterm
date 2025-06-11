@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- 
+    ISTE-240
+    Midterm - Individual Project Part 1 (Irondequoit)
+    Food
+    
+    Author: Nathan Pedersen
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <script src="assets/js/mouseover.js"></script>
+        <script src="assets/js/nav.js"></script>
+        
+        <title>Food | Irondequoit</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icons/irondequoit_town_seal.ico">
+    </head>
+    <body>
+        <header class="vertical-header">
+            <div id="town-card">
+                <img src="assets/images/irondequoit_town_seal.png"
+                    alt="Town Seal for the Town of Irondequoit, Monroe County New York."
+                    id="town-seal">
+                <div id="town-title">
+                    <h1 class="subh1">Town of</h1>
+                    <h1>Irondequoit</h1>
+                </div>
+                
+                <!-- hamburger menu for mobile view -->
+                <button id="menu-button" onclick="toggleMenuVisibility()">
+                    <img src="assets/images/icons/icon_hamburger.png"
+                        alt="Hamburger menu icon.">
+                </button>
+            </div>
+
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="current-page"><a href="food.html">Food</a></li>
+                    <li id="page-topics">
+                        <ul>
+                            <li><a href="#parkside-diner">Parkside Diner</a></li>
+                            <li><a href="#shamrock-jacks">Shamrock Jack's</a></li>
+                            <li><a href="#i-square">I-Square</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="helmer_nature_center.html">Helmer Nature Center</a></li>
+                    <li><a href="durand_eastman_park.html">Durand Eastman Park</a></li>
+                    <li><a href="seneca_park_zoo.html">Seneca Park Zoo</a></li>
+                    <li><a href="seabreeze.html">Seabreeze Amusement Park</a></li>
+                    <li><a href="feedback.html">Visitor Feedback</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="grading.html">Grading Criteria</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Food Around Irondequoit</h2>
+
+            <section id="parkside-diner">
+                <h3>Parkside Diner</h3>
+                <img src="assets/images/food/parkside_diner_outdoors.png"
+                    alt="Picture of Parkside Diner."
+                    class="float-right"
+                    id="parkside-diner-img"
+                    onmouseover="change('parkside-diner-img', 'assets/images/food/parkside_diner_indoors.png')"
+                    onmouseout="change('parkside-diner-img', 'assets/images/food/parkside_diner_outdoors.png')">
+                <p>
+                    There&apos;s something timeless about Parkside Diner, a place where the scent of sizzling bacon and fresh coffee lingers in the air like a warm memory. The booths are worn in the way only well-loved spots can be, the kind where regulars slide in without a second thought, already knowing what they&apos;ll order. The griddle never seems to rest, flipping pancakes to golden perfection, crisping up home fries that crackle under the weight of a fork. It&apos;s a place that doesn&apos;t try to be anything more than what it is—comfort, served on a plate, with a side of nostalgia.
+                </p>
+            </section>
+
+            <section id="shamrock-jacks">
+                <h3>Shamrock Jack's</h3>
+                <img src="assets/images/food/shamrock_jacks_outdoors.jpg"
+                    alt="Picture of Shamrock Jack's Pub."
+                    class="float-left"
+                    id="shamrock-jacks-img"
+                    onmouseover="change('shamrock-jacks-img', 'assets/images/food/shamrock_jacks_indoors.jpg')"
+                    onmouseout="change('shamrock-jacks-img', 'assets/images/food/shamrock_jacks_outdoors.jpg')">
+                <p>
+                    A flickering neon shamrock casts a soft green glow outside, an unspoken promise of good food and even better company. Inside, Shamrock Jack&apos;s hums with the kind of warmth that only a neighborhood pub can conjure—half laughter, half the clink of pint glasses meeting in midair. The menu is a greatest hits album of comfort food, with fish and chips so crisp they almost shatter, and shepherd&apos;s pie rich enough to chase away even the worst of Rochester winters. It&apos;s the sort of place where time slows down, where stories stretch a little longer, and where the Guinness flows just right.
+                </p>
+            </section>
+
+            <section id="i-square">
+                <h3>I-Square</h3>
+                <img src="assets/images/food/isquare_outdoors.png"
+                    alt="Picture of I-Square food court."
+                    class="float-right"
+                    id="isquare-img"
+                    onmouseover="change('isquare-img', 'assets/images/food/isquare_indoors.png')"
+                    onmouseout="change('isquare-img', 'assets/images/food/isquare_outdoors.png')">
+                <p>
+                    I-Square doesn&apos;t settle for being just one thing. It&apos;s a little bit of everything all at once—an open, bustling hub where people gather, where live music drifts through the air, where food is as much about the experience as the taste. You could grab a burger, wood-fired and piled high, or a pizza with just the right amount of char, then wander upstairs to watch the town from the rooftop. No two visits are ever quite the same, but that&apos;s the magic of it. It&apos;s not just a meal; it&apos;s a place where Irondequoit comes together.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <hr id="footer-hr">
+            <p>Validate this Webpage: 
+                <a href="https://validator.w3.org/check?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/food.html">HTML</a>,
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/food.html">CSS</a>
+            </p>
+            <p>Contact Me: <a href="mailto:nhp8222@rit.edu">nhp8222@rit.edu</a></p>
+            <p>&copy; 2025 Nathan Pedersen</p>
+            <p>Return to <a href="../index.html">Homepage</a></p>
+        </footer>
+    </body>
+</html>

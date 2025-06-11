@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- 
+    ISTE-240
+    Midterm - Individual Project Part 1 (Irondequoit)
+    Seabreeze
+    
+    Author: Nathan Pedersen
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="assets/js/mouseover.js"></script>
+        <script src="assets/js/nav.js"></script>
+        
+        <title>Seabreeze | Irondequoit</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icons/irondequoit_town_seal.ico">
+    </head>
+    <body>
+        <header class="vertical-header">
+            <div id="town-card">
+                <img src="assets/images/irondequoit_town_seal.png"
+                    alt="Town Seal for the Town of Irondequoit, Monroe County New York."
+                    id="town-seal">
+                <div id="town-title">
+                    <h1 class="subh1">Town of</h1>
+                    <h1>Irondequoit</h1>
+                </div>
+                
+                <!-- hamburger menu for mobile view -->
+                <button id="menu-button" onclick="toggleMenuVisibility()">
+                    <img src="assets/images/icons/icon_hamburger.png"
+                        alt="Hamburger menu icon.">
+                </button>
+            </div>
+            
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="helmer_nature_center.html">Helmer Nature Center</a></li>
+                    <li><a href="durand_eastman_park.html">Durand Eastman Park</a></li>
+                    <li><a href="seneca_park_zoo.html">Seneca Park Zoo</a></li>
+                    <li id="current-page"><a href="seabreeze.html">Seabreeze Amusement Park</a></li>
+                    <li id="page-topics">
+                        <ul>
+                            <li><a href="#jack_rabbit">The Jack Rabbit</a></li>
+                            <li><a href="#park-map">Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="feedback.html">Visitor Feedback</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="grading.html">Grading Criteria</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img src="assets/images/seabreeze/whirlwind.jpg"
+                alt="Picature of two girls riding the Whirlwind roller coaster."
+                class="hero">
+            
+            <section id="amusement-park">
+                <h2>Seabreeze Amusement Park</h2>
+                <p>
+                    Perched along the shores of Lake Ontario, Seabreeze Amusement Park is a timeless destination 
+                    where generations of visitors have come to enjoy summer thrills and family fun. With a perfect 
+                    blend of classic rides, modern attractions, and a refreshing water park, Seabreeze captures 
+                    the essence of a nostalgic yet ever-evolving amusement park experience. Whether you're soaring 
+                    through the sky on the Wave Swinger, cooling off on the Log Flume, or indulging in some 
+                    classic fried dough, there's a little something for everyone. And with its scenic location, 
+                    the views of the lake make every visit feel like a true getaway.
+                </p>
+            </section>
+
+            <section id="jack-rabbit">
+                <h3>The Jack Rabbit: The Oldest Roller Coaster in America</h3>
+                <img src="assets/images/seabreeze/jack_rabbit_entrance.jpg"
+                    alt="Picture of the Jack Rabbit roller coaster."
+                    class="float-right full"
+                    id="jack-rabbit-img"
+                    onmouseover="change('jack-rabbit-img', 'assets/images/seabreeze/jack_rabbit.jpg')"
+                    onmouseout="change('jack-rabbit-img', 'assets/images/seabreeze/jack_rabbit_entrance.jpg')">
+                <p>
+                    No trip to Seabreeze is complete without a ride on the Jack Rabbit, the park&apos;s most 
+                    legendary attraction. Built in 1920, this historic wooden coaster is the oldest continuously 
+                    operating roller coaster in America, delivering over a century of thrills. With its signature 
+                    drops, sharp turns, and an unforgettable final plunge, the Jack Rabbit remains a favorite 
+                    among coaster enthusiasts and casual riders alike. The unmistakable sound of its wooden tracks 
+                    and the rush of the wind as it speeds down the hills make it a true classic—one that has 
+                    delighted generations and still delivers the same heart-pounding excitement today.
+                </p>
+            </section>
+
+            <section id="park-map">
+                <h3>Park Map</h3>
+                <img src="assets/images/seabreeze/seabreeze_map.jpg"
+                    alt="Stylized graphic map of Seabreeze Amusement Park."
+                    class="full">
+            </section>
+        </main>
+
+        <footer>
+            <hr id="footer-hr">
+            <p>Validate this Webpage: 
+                <a href="https://validator.w3.org/check?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/seabreeze.html">HTML</a>,
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/seabreeze.html">CSS</a>
+            </p>
+            <p>Contact Me: <a href="mailto:nhp8222@rit.edu">nhp8222@rit.edu</a></p>
+            <p>&copy; 2025 Nathan Pedersen</p>
+            <p>Return to <a href="../index.html">Homepage</a></p>
+        </footer>
+    </body>
+</html>

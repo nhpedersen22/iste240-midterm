@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 
+    ISTE-240
+    Midterm - Individual Project Part 1 (Irondequoit)
+    Seneca Park Zoo
+    
+    Author: Nathan Pedersen
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="assets/js/mouseover.js"></script>
+        <script src="assets/js/nav.js"></script>
+        
+        <title>Seneca Park Zoo | Irondequoit</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icons/irondequoit_town_seal.ico">
+    </head>
+    <body>
+        <header class="vertical-header">
+            <div id="town-card">
+                <img src="assets/images/irondequoit_town_seal.png"
+                    alt="Town Seal for the Town of Irondequoit, Monroe County New York."
+                    id="town-seal">
+                <div id="town-title">
+                    <h1 class="subh1">Town of</h1>
+                    <h1>Irondequoit</h1>
+                </div>
+                
+                <!-- hamburger menu for mobile view -->
+                <button id="menu-button" onclick="toggleMenuVisibility()">
+                    <img src="assets/images/icons/icon_hamburger.png"
+                        alt="Hamburger menu icon.">
+                </button>
+            </div>
+            
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="helmer_nature_center.html">Helmer Nature Center</a></li>
+                    <li><a href="durand_eastman_park.html">Durand Eastman Park</a></li>
+                    <li id="current-page"><a href="seneca_park_zoo.html">Seneca Park Zoo</a></li>
+                    <li id="page-topics">
+                        <ul>
+                            <li><a href="#animals">Penguins and Polar Bears</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="seabreeze.html">Seabreeze Amusement Park</a></li>
+                    <li><a href="feedback.html">Visitor Feedback</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="grading.html">Grading Criteria</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img src="assets/images/seneca_park_zoo/Seneca_Park_Zoo_Entrance.jpg"
+                alt="Picture of an empty entrance to 'Monroe County's Seneca Park Zoo'."
+                class="hero">
+            
+            <section id="zoo_overview">
+                <h2>Seneca Park Zoo</h2>
+                <p>
+                    Nestled along the banks of the Genesee River, Seneca Park Zoo is a hidden treasure where 
+                    nature and adventure collide. This beloved zoo offers an up-close look at animals from 
+                    across the globe while fostering a deep appreciation for wildlife conservation. Whether 
+                    you're marveling at a lion basking in the sun, watching a red panda navigate the treetops, 
+                    or catching sight of a rhino lumbering through its habitat, every visit promises something 
+                    new. With its commitment to education and preservation, Seneca Park Zoo isn't just a place 
+                    to see animals—it's a place to connect with the natural world.
+                </p>
+            </section>
+        
+            <section id="animals">
+                <h3>African Penguins and Arctic Polar Bears</h3>
+                <img src="assets/images/seneca_park_zoo/penguins.jpg"
+                    alt="Pictures of African Penguins and Polar Bears at Seneca Park Zoo."
+                    class="float-right medium"
+                    id="animals-img"
+                    onmouseover="change('animals-img', 'assets/images/seneca_park_zoo/polar_bear.jpg')"
+                    onmouseout="change('animals-img', 'assets/images/seneca_park_zoo/penguins.jpg')">
+                <p>
+                    For me, no trip to the zoo is complete without a visit to the African penguins and polar 
+                    bears. The penguins, full of personality, waddle along the rocky shore before diving into 
+                    the water like sleek little torpedoes. Unlike their Antarctic cousins, these warm-weather 
+                    birds thrive in the sun, proving that not all penguins need ice to be cool. On the other 
+                    end of the spectrum, the polar bears steal the show with their sheer size and grace. 
+                    Whether they&apos;re playfully splashing in the water or lounging in the shade, 
+                    there&apos;s something mesmerizing about them—like watching a snowdrift come to life. 
+                    These two species, so different yet so captivating, make every trip to the zoo a charm.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <hr id="footer-hr">
+            <p>Validate this Webpage: 
+                <a href="https://validator.w3.org/check?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/seneca_park_zoo.html">HTML</a>,
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/seneca_park_zoo.html">CSS</a>
+            </p>
+            <p>Contact Me: <a href="mailto:nhp8222@rit.edu">nhp8222@rit.edu</a></p>
+            <p>&copy; 2025 Nathan Pedersen</p>
+            <p>Return to <a href="../index.html">Homepage</a></p>
+        </footer>
+    </body>
+</html>

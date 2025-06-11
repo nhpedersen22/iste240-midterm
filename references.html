@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 
+    ISTE-240
+    Midterm - Individual Project Part 1 (Irondequoit)
+    References
+    
+    Author: Nathan Pedersen
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <script src="assets/js/nav.js"></script>
+        
+        <title>References | Irondequoit</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icons/irondequoit_town_seal.ico">
+    </head>
+    <body>
+        <header class="vertical-header">
+            <div id="town-card">
+                <img src="assets/images/irondequoit_town_seal.png"
+                    alt="Town Seal for the Town of Irondequoit, Monroe County New York."
+                    id="town-seal">
+                <div id="town-title">
+                    <h1 class="subh1">Town of</h1>
+                    <h1>Irondequoit</h1>
+                </div>
+                
+                <!-- hamburger menu for mobile view -->
+                <button id="menu-button" onclick="toggleMenuVisibility()">
+                    <img src="assets/images/icons/icon_hamburger.png"
+                        alt="Hamburger menu icon.">
+                </button>
+            </div>
+            
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="helmer_nature_center.html">Helmer Nature Center</a></li>
+                    <li><a href="durand_eastman_park.html">Durand Eastman Park</a></li>
+                    <li><a href="seneca_park_zoo.html">Seneca Park Zoo</a></li>
+                    <li><a href="seabreeze.html">Seabreeze Amusement Park</a></li>
+                    <li><a href="feedback.html">Visitor Feedback</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="grading.html">Grading Criteria</a></li>
+                    <li id="current-page"><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>References</h2>
+            <p id="references-download">
+                <a href="assets/documents/pedersen_nathan_midterm_project_references.pdf" 
+                download="newfilename">Download the pdf</a>
+            </p>
+            <div class="page_embed" id="references-embed">
+                <embed src="assets/documents/pedersen_nathan_midterm_project_references.pdf"
+                    style="width: 100%; height: 80vh;">
+            </div>
+        </main>
+
+        <footer>
+            <hr id="footer-hr">
+            <p>Validate this Webpage: 
+                <a href="https://validator.w3.org/check?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/references.html">HTML</a>,
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/references.html">CSS</a>
+            </p>
+            <p>Contact Me: <a href="mailto:nhp8222@rit.edu">nhp8222@rit.edu</a></p>
+            <p>&copy; 2025 Nathan Pedersen</p>
+            <p>Return to <a href="../index.html">Homepage</a></p>
+        </footer>
+    </body>
+</html>

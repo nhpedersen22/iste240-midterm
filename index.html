@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- 
+    ISTE-240
+    Midterm - Individual Project Part 1 (Irondequoit)
+    Home
+    
+    Author: Nathan Pedersen
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <script src="assets/js/slideshow.js"></script>
+        <script src="assets/js/nav.js"></script>
+        
+        <title>Home | Irondequoit</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icons/irondequoit_town_seal.ico">
+    </head>
+    <body>
+        <header class="vertical-header">
+            <div id="town-card">
+                <img src="assets/images/irondequoit_town_seal.png"
+                    alt="Town Seal for the Town of Irondequoit, Monroe County New York."
+                    id="town-seal">
+                <div id="town-title">
+                    <h1 class="subh1">Town of</h1>
+                    <h1>Irondequoit</h1>
+                </div>
+                
+                <!-- hamburger menu for mobile view -->
+                <button id="menu-button" onclick="toggleMenuVisibility()">
+                    <img src="assets/images/icons/icon_hamburger.png"
+                        alt="Hamburger menu icon.">
+                </button>
+            </div>
+
+            <nav id="nav-links">
+                <ul>
+                    <li id="current-page"><a href="index.html">Home</a></li>
+                    <li id="page-topics">
+                        <ul>
+                            <li><a href="#locations">Locations</a></li>
+                            <li><a href="#town-map">Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="helmer_nature_center.html">Helmer Nature Center</a></li>
+                    <li><a href="durand_eastman_park.html">Durand Eastman Park</a></li>
+                    <li><a href="seneca_park_zoo.html">Seneca Park Zoo</a></li>
+                    <li><a href="seabreeze.html">Seabreeze Amusement Park</a></li>
+                    <li><a href="feedback.html">Visitor Feedback</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="grading.html">Grading Criteria</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="slideshow-container">
+                <img src="assets/images/home/town_hall_hero.jpg"
+                    alt="An outdoors welcome sign displaying 'Earle W. Helmer Nature Center'."
+                    id="slideshow"
+                    class="hero">
+            </div>
+
+            <section id="locations">
+                <h2>Points of Interest In Irondequoit</h2>
+    
+                <div class="location-cards">
+                    <div class="card">
+                        <img src="assets/images/home/maps/map_food.png"
+                            alt="Map showing the locations of prominent food joints around Irondequoit."
+                            class="card-img">
+                        <h3><a href="food.html">Food</a></h3>
+                        <p>
+                            Explore the best local dining spots, from the nostalgic warmth of Parkside Diner to the 
+                            lively atmosphere of Shamrock Jack's, and the vibrant culinary experiences at I-Square.
+                        </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="assets/images/home/maps/map_hnc.png"
+                            alt="Map showing the location of the Helmer Nature Center, within Irondequoit."
+                            class="card-img">
+                        <h3><a href="helmer_nature_center.html">Helmer Nature Center</a></h3>
+                        <p>
+                            Discover the peaceful beauty of Helmer Nature Center, a quiet retreat with trails to 
+                            explore, wildlife to observe, and community events that bring nature and education 
+                            together.
+                        </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="assets/images/home/maps/map_de.png"
+                            alt="Map showing the location of Durand Eastman Park, within Irondequoit."
+                            class="card-img">
+                        <h3><a href="durand_eastman_park.html">Durand Eastman Park</a></h3>
+                        <p>
+                            Experience the natural beauty of Durand Eastman Park, offering serene hiking trails, fun 
+                            sledding hills, and the stunning sunsets at Durand Eastman Beach.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="assets/images/home/maps/map_zoo.png"
+                            alt="Map showing the location of the Seneca Park Zoo, within Irondequoit"
+                            class="card-img">
+                        <h3><a href="seneca_park_zoo.html">Seneca Park Zoo</a></h3>
+                        <p>
+                            Get an up-close look at animals from around the world at Seneca Park Zoo, a place where 
+                            wildlife conservation and education thrive alongside memorable animal encounters.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="assets/images/home/maps/map_seabreeze.png"
+                            alt="Map showing the location of Seabreeze Amusement Park, within Irondequoit."
+                            class="card-img">
+                        <h3><a href="seabreeze.html">Seabreeze</a></h3>
+                        <p>
+                            Enjoy timeless thrills at Seabreeze Amusement Park, where classic rides, a scenic lake 
+                            view, and the historic Jack Rabbit roller coaster create unforgettable memories.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="town-map">
+                <h2>Map of the Town</h2>
+                <p>
+                    Explore Irondequoit with this interactive map!
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46525.58996597013!2d-77.58705427274805!3d43.212648555185105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b622de4d4ab9%3A0x1c36191cdd69d220!2sIrondequoit%2C%20NY!5e0!3m2!1sen!2sus!4v1741471791260!5m2!1sen!2sus" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    id="gmap">
+                </iframe>
+            </section>
+        </main>
+
+        <footer>
+            <hr id="footer-hr">
+            <p>Validate this Webpage: 
+                <a href="https://validator.w3.org/check?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/index.html">HTML</a>,
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://people.rit.edu/~nhp8222/ISTE240/midterm/index.html">CSS</a>
+            </p>
+            <p>Contact Me: <a href="mailto:nhp8222@rit.edu">nhp8222@rit.edu</a></p>
+            <p>&copy; 2025 Nathan Pedersen</p>
+            <p>Return to <a href="../index.html">Homepage</a></p>
+        </footer>
+    </body>
+</html>
